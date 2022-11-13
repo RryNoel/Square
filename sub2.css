@@ -1,0 +1,822 @@
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/* headerline hmn~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.hmn {
+    max-width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+}
+
+.hmn2 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+.hmn2_M .hmn2_ML a {
+    float: left;
+}
+
+.hmn2_M .hmn2_ML h1 {
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size: 26px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.hmn2_M .hmn2_ML h1:hover {
+    color: #e41616;
+    transition: 0.3s all;
+}
+
+.hmn2_M .hmn2_menu {
+    display: none;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url(img/hmn_menu.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 50px 50px;
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+.hmn2_M .hmn2_modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.hmn2_M .hmn2_hidden {
+    display: none;
+}
+
+.hmn2_modal .hmn2_overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hmn2_modal .hmn2_content {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.hmn2_content .hmn2_MB h1 {
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.hmn2_content .hmn2_MB h1:hover {
+    color: #e41616;
+    transition: 0.3s all;
+}
+
+.hmn2_content .button2 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.hmn2_L {
+    width: 329px;
+    margin: 0 auto;
+}
+
+.hmn2_L img {
+    float: left;
+    width: 260px;
+    height: 30px;
+    margin-top: 22px;
+}
+
+.hmn2_S {
+    float: right;
+}
+
+.hmn2_S .hmn2_Search {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-image: url(img/hmn_search.png);
+    background-repeat: no-repeat;
+    background-size: 39px 39px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 14px;
+    margin-right: 15px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.hmn2_S .hmn2_modal2 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.hmn2_S .hmn2_hidden2 {
+    display: none;
+}
+
+.hmn2_modal2 .hmn2_overlay2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hmn2_modal2 .hmn2_content2 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.hmn2_content2 input {
+    font-family: 'Pretendard-Light';
+    width: 320px;
+    height: 30px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    margin-top: 9px;
+    padding-left: 10px;
+}
+
+.hmn2_content2 .hmn2_Search2 {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/hmn_search.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-color: #eaeaea;
+    border-radius: 0 4px 4px 0;
+    margin-top: 9px;
+    margin-right: 25px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.hmn2_content2 .button3 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+@media (max-width: 1110px) {
+
+    .hmn2_M .hmn2_ML {
+        display: none;
+    }
+
+    .hmn2_M .hmn2_menu {
+        display: block;
+    }
+
+    .hmn2_L {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .hmn2_L img {
+        width: 250px;
+        height: 26px;
+        margin-top: 23px;
+    }
+
+    .hmn2_S .hmn2_SI {
+        display: none;
+    }
+
+    .hmn2_S .hmn2_Search {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        background-color: white;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hmn2_M .hmn2_menu {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        margin-top: 19px;
+    }
+
+    .hmn2_L {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .hmn2_L img {
+        width: 200px;
+        height: 21px;
+        margin-top: 25px;
+    }
+
+    .hmn2_S .hmn2_SI {
+        display: none;
+    }
+
+    .hmn2_S .hmn2_Search {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+        margin-top: 20px;
+    }
+}
+
+
+/* sectionline ytb~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.ytb {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ytb_1 {
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.ytb_1::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/background2.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-filter: blur(1.5px); 
+    -moz-filter: blur(1.5px); 
+    -o-filter: blur(1.5px); 
+    -ms-filter: blur(1.5px); 
+    filter: blur(1.5px);
+}
+
+.ytb_F {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ytb_F iframe {
+    width: 100%;
+    height: 55vh;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.ytb_F img {
+    float: left;
+    width: 50%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.ytb_2 {
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.ytb_2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/background3.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-filter: blur(1.5px); 
+    -moz-filter: blur(1.5px); 
+    -o-filter: blur(1.5px); 
+    -ms-filter: blur(1.5px); 
+    filter: blur(1.5px);
+}
+
+.ytb_S {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ytb_S h1 {
+    float: left;
+    width: 250px;
+    height: 60px;
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size: 36px;
+    color: white;
+    margin-left: 30px;
+    border: 1px dashed white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@keyframes fadeInLeft {
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+}
+
+@keyframes fadeInRight {
+
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+
+}
+
+.ytb_S img {
+    width: 48%;
+    height: 45vh;
+    border-radius: 15px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+
+.ytb_S #img1 {
+    animation: fadeInLeft 1.5s;
+}
+
+.ytb_S #img2 {
+    animation: fadeInRight 1.5s;
+}
+
+.ytb_3 {
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.ytb_3::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/background3.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-filter: blur(1.5px); 
+    -moz-filter: blur(1.5px); 
+    -o-filter: blur(1.5px); 
+    -ms-filter: blur(1.5px); 
+    filter: blur(1.5px);
+}
+
+.ytb_B {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ytb_B h1 {
+    float: left;
+    width: 250px;
+    height: 60px;
+    font-family: 'EliceDigitalBaeum_Bold';
+    font-size: 36px;
+    color: white;
+    margin-left: 58px;
+    border: 1px dashed white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ytb_B .ytb_Box {
+    width: 1288px;
+    height: 711px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 57px;
+    margin-top: 40px;
+}
+
+.ytb_B .ytb_Box .ytb_B1 {
+    float: left;
+    width: 1200px;
+    height: 216px;
+    margin-top: 16px;
+}
+
+.ytb_B .ytb_Box img {
+    float: left;
+    width: 288px;
+    height: 216px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.ytb_B .ytb_Box h2 {
+    float: left;
+    font-family: 'EliceDigitalBaeum-Bd';
+    font-size: 32px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ytb_B .ytb_Box p {
+    float: left;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.ytb_B .ytb_Box span {
+    float: right;
+    font-family: 'Pretendard-Light';
+    font-size: 18px;
+    margin-top: 140px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1400px) {
+    
+    .ytb_S {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .ytb_S img {
+        width: 55%;
+        height: 40vh;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+
+    .ytb_S img {
+        width: 55%;
+        height: 35vh;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .ytb_F img {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .ytb_S img {
+        width: 95%;
+        height: 40vh;
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .ytb_B .ytb_Box {
+        background-color: transparent;
+        margin-top: 1px;
+    }
+
+    .ytb_B .ytb_Box img {
+        margin-left: 40px;
+    }
+
+    .ytb_B .ytb_Box h2,
+    .ytb_B .ytb_Box p,
+    .ytb_B .ytb_Box span {
+        display: none;
+    }
+}
+
+/* footerline~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.fmn {
+    max-width: 100%;
+    height: 70px;
+    background-color: #ebebeb;
+}
+
+.fmn .fmn2 {
+    max-width: 1400px;
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+.fmn2 li {
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 17px;
+}
+
+.fmn2 a {
+    font-family: 'Pretendard-SemiBold';
+    font-size: 28px;
+}
+
+.fmn2 a:hover {
+    color: rgb(201, 9, 9);
+}
+
+@media (max-width: 1000px) {
+    
+    .fmn {
+        max-width: 100%;
+        background-color: #ebebeb;
+        padding-bottom: 200px;
+        margin-top: 20px;
+    }
+
+    .fmn .fmn2 {
+        max-width: 1000px;
+        min-width: 500px;
+        margin: 0 auto;
+    }
+
+    .fmn2 li {
+        max-width: 100%;
+        height: 30px;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .fmn2 li:hover {
+        background-color: rgb(201, 9, 9);
+        cursor: pointer;
+    }
+
+    .fmn2 a {
+        font-size: 24px;
+    }
+
+    .fmn2 li:hover a {
+        color: white;
+    }
+
+}
+
+
+
+.fen {
+    max-width: 100%;
+    height: 140px;
+    background-color: #333333;
+}
+
+.fen .fen2 {
+    max-width: 1400px;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.fen2_F {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.fen2_F li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.fen2_F a {
+    font-family: 'Pretendard-Light';
+    font-size: 20px;
+    color: #e7e7e7;
+}
+
+.fen2_F a:hover {
+    color: rgb(185, 185, 185);
+}
+
+
+
+.fen2_L {
+    width: 296px;
+    margin: 0 auto;
+}
+
+.fen2_L img {
+    margin-top: 18px;
+}
+
+
+
+.fen2_S {
+    width: 420px;
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+.fen2_S span {
+    color: #e7e7e7;
+    margin-left: 15px;
+}
+
+@media (max-width: 500px) {
+
+    .fen .fen2 {
+        min-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .fen2_F {
+        width: 500px;
+        margin: 0 auto;
+    }
+    
+    .fen2_F li {
+        display: inline-block;
+        margin-left: 29px;
+        margin-top: 15px;
+    }
+    
+    .fen2_F a {
+        font-family: 'Pretendard-Light';
+        font-size: 15px;
+        color: #e7e7e7;
+    }
+    
+    .fen2_F a:hover {
+        color: rgb(185, 185, 185);
+    }
+    
+    
+    
+    .fen2_L {
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .fen2_L img {
+        margin-top: 18px;
+        width: 200px;
+        height: 22px;
+        margin-left: -5px;
+    }
+    
+    
+    
+    .fen2_S {
+        width: 420px;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    
+    .fen2_S span {
+        color: #e7e7e7;
+        margin-left: 15px;
+    }
+
+}
